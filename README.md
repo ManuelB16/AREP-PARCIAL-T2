@@ -1,1 +1,0 @@
-# AREP-PARCIAL-T2
