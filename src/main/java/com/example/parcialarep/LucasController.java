@@ -15,7 +15,7 @@ public class LucasController {
 
     private String computeLucasSequence(int n) {
         if (n < 0) {
-            throw new IllegalArgumentException("Value must be non-negative");
+            throw new IllegalArgumentException("El valor no puede ser negativo");
         }
         if (n == 0) {
             return "2";

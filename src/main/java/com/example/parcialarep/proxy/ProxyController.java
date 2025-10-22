@@ -28,7 +28,7 @@ public class ProxyController {
             try {
                 return callService(url2);
             } catch (IOException ex) {
-                return "{\"error\": \"Both services are down\"}";
+                return "{\"error\": \"Ambos servicios estan abajo\"}";
             }
         }
     }
@@ -50,7 +50,7 @@ public class ProxyController {
             in.close();
             return response.toString();
         } else {
-            throw new IOException("Service not available");
+            throw new IOException("Servicio no disponible");
         }
     }
 }

@@ -1,25 +1,9 @@
-# Getting Started
+Comandos mvn clean package
 
-### Reference Documentation
-For further reference, please consider the following sections:
+set PORT=4567 java -cp target/searchapp-1.0-SNAPSHOT-jar-with-dependencies.jar edu.escuelaing.arep.searchapp.SearchService
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/3.5.6/maven-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.5.6/maven-plugin/build-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.5.6/reference/web/servlet.html)
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/3.5.6/reference/using/devtools.html)
+set PORT=4568 java -cp target/searchapp-1.0-SNAPSHOT-jar-with-dependencies.jar edu.escuelaing.arep.searchapp.SearchService
 
-### Guides
-The following guides illustrate how to use some features concretely:
+set BACKEND1=http://localhost:4567 set BACKEND2=http://localhost:4568 set PORT=8080 java -cp target/searchapp-1.0-SNAPSHOT-jar-with-dependencies.jar edu.escuelaing.arep.searchapp.ProxyService
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-
-### Maven Parent overrides
-
-Due to Maven's design, elements are inherited from the parent POM to the project POM.
-While most of the inheritance is fine, it also inherits unwanted elements like `<license>` and `<developers>` from the parent.
-To prevent this, the project POM contains empty overrides for these elements.
-If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
-
+mvn archetype:generate -DgroupId=edu.escuelaing.arep.searchapp -DartifactId=searchapp -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

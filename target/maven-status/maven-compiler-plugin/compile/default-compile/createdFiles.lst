@@ -1,4 +1,4 @@
+com\example\parcialarep\LucasResponse.class
 com\example\parcialarep\ParcialarepApplication.class
 com\example\parcialarep\proxy\ProxyController.class
-com\example\parcialarep\controller\LucasController.class
-com\example\parcialarep\controller\LucasResponse.class
+com\example\parcialarep\LucasController.class
